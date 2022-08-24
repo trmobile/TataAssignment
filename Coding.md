@@ -2,7 +2,7 @@
 the display width is small for them to fit.
     
 ## Solution: 
-        
+```        
 import 'package:flutter/material.dart';
 
 class WrapWidget extends StatelessWidget {
@@ -49,6 +49,7 @@ class WrapWidget extends StatelessWidget {
     );
   }
 }
+```
 
 Output: ![Screenshot](wrap_widget.png)
 
