@@ -2,6 +2,7 @@
 the display width is small for them to fit.
     
 ## Solution: 
+
 ```        
 import 'package:flutter/material.dart';
 
@@ -56,6 +57,7 @@ Output: ![Screenshot](wrap_widget.png)
 
 2. Identify the problem in the following code block and correct it.
 
+```
     String LongOperationMethod(int number){
         var counting = 0;
         for(var i=1;1<=10000000000;i++){
@@ -63,6 +65,7 @@ Output: ![Screenshot](wrap_widget.png)
         }
         return '$counting! times I print the value!';
     }
+```    
 
     ## Solution: 
         The method needs has a for loop which needs to loop through a billion times, which is an expensive task, considering Dart running in a Single isolate or thread this could lead to blocking of the App  (App not responding error or issue).
@@ -82,7 +85,7 @@ Output: ![Screenshot](wrap_widget.png)
     }
 
 3. In the below code, list1 declared with var, list2 with final and list3 with const. What is the difference between these lists? Will the last two lines compile?
-        
+    ```
         var list1 = ['1', '2', '3']; // line 1
 
         final list2 = list1; // line 2
@@ -90,6 +93,7 @@ Output: ![Screenshot](wrap_widget.png)
         list2[2] = 'Dart'; // line 3
 
         const list3 = list1 //line 4
+    ```    
 
     ## Solution :
 
