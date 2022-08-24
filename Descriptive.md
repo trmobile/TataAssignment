@@ -1,6 +1,7 @@
 # TataAssignment
 
  1. Can we nest the Scaffold widget? Why or Why not?
+ 
     **Ans** : **Yes it's possible to nest scaffold widget, but that's not the best approach if we need tabbed or nested navigations.**
  
  2. What are the different ways we can create a custom widget ?
