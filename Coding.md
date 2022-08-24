@@ -1,7 +1,7 @@
 1. Refactor the code below so that the children will wrap to the next line when
 the display width is small for them to fit.
     
-## Solution: 
+**Solution:** 
 
 ```        
 import 'package:flutter/material.dart';
@@ -67,7 +67,7 @@ Output: ![Screenshot](wrap_widget.png)
     }
 ```    
 
-    ## Solution: 
+**Solution:**
         The method needs has a for loop which needs to loop through a billion times, which is an expensive task, considering Dart running in a Single isolate or thread this could lead to blocking of the App  (App not responding error or issue).
 
         To resolve the issue we need to execute or run this method in a separate isolate which could be done using a 'compute'
@@ -95,7 +95,7 @@ Output: ![Screenshot](wrap_widget.png)
         const list3 = list1 //line 4
     ```    
 
-    ## Solution :
+    **Solution :**
 
         Line 3 will compile because, 'final' is Runtime constant and we are changing value of an index so this will work
 
